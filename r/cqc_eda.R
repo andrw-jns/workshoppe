@@ -217,7 +217,7 @@ deprivation <- read_rds("./data/deprivation.rds") %>% select(lsoa, imd, idaopi, 
 
 # joins -------------------------------------------------------------------
 
-map(list(lsoa_pop, hes, ccg_lsoa, cqc_big, deprivation), names)
+# map(list(lsoa_pop, hes, ccg_lsoa, cqc_big, deprivation), names)
 
 # the straightforward joins:
 join1 <- left_join(lsoa_pop, ccg_lsoa, by = c("area_code" = "lsoa"))
