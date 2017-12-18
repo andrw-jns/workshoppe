@@ -43,6 +43,9 @@ nb1 <- train(admissions ~ beds + idaopi_quint + ccg_name + offset(log(over_75)),
 "In parameters need to specify: link = log "
 
 nb1
+
+"https://stats.stackexchange.com/questions/35071/what-is-rank-deficiency-and-how-to-deal-with-it
+"
 "
 However, even good data is sometimes inadequate, at least numerically so. (Why do bad things happen to good data?) The problem here may be model related. It may lie in nothing more than a poor choice of units. It may stem from the computer programming done to solve the problem. (Ugh! Where to start?)
 
